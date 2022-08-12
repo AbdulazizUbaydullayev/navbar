@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .nav_collection{
+            color: white;
+            /* display: flex; = child larni yonma-yon qilib beradi */
+            display: flex;
+            list-style: none;
+        }
+        .nav_item{
+            margin-left: 30px;
+        }
+        .nav_form{
+            margin-left: 64%;
+        }
+        .nav_form input{
+            height: 50px;
+        }
+        .nav_form button{
+            height: 50px;
+            background-color: green;
+            color: white;
+        }
+        .main{
+            width: 900px;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            /* balandlik bo'yicha */
+            align-items: center;
+            /* tekislik bo'yicha */
+            justify-content: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav_collection">
+            <li class="nav_item">Home</li>
+            <li class="nav_item">About</li>
+            <li class="nav_item">Blog</li>
+            <li class="nav_item">Contact Us</li>
+        </ul>
+        <form class="nav_form" action="">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+
+
+</body>
+</html>
